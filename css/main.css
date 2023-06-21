@@ -1,0 +1,502 @@
+@charset "UTF-8";
+/*Colores*/
+/*Tamaños de navegacion*/
+
+#contenedorTarjetas{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width:250px;
+    height: 430px;
+    border:1px solid;
+    border-radius:5px;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin:10px;
+    padding:10px;
+    
+}
+.encabezado{
+  width:100%;
+  height: 80px;
+  background-color: blue;
+  display: flex;
+  justify-content: end;
+}
+
+#carrito{
+  padding:20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+#carrito i{
+  font-size: 24px;
+
+}
+
+#carrito span{
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 40px
+}
+.tarjeta button{
+  border:none;
+  background-color: blue;
+  color:white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin:10px;
+  }
+
+  .tarjeta .contenido{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.tarjeta img{
+  width:inherit;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
+.form input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+}
+.form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(255, 100, 100);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-outline {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-nav .nav-link .nav-item {
+  color: azure;
+  font-size: 3em;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #808080;
+}
+
+.card {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px, 100px;
+  grid-template-columns: 100px, 100px, 100px;
+}
+
+.grid-item {
+  border: 1px solid red;
+}
+
+.item1 {
+  background-color: blueviolet;
+}
+
+.item2 {
+  background-color: yellow;
+}
+
+.item3 {
+  background-color: red;
+}
+
+.item4 {
+  background-color: green;
+}
+
+.item5 {
+  background-color: magenta;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 2.5fr 0.5fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  align-content: center;
+  align-items: stretch;
+  grid-template-areas: ". FOTO DATOS DESCRIPCION ." ". FOTO1 DATOS1 DESCRIPCION1 ." ". FOTO2 DATOS2 DESCRIPCION2 ." ". FOTO3 DATOS3 DESCRIPCION3 .";
+}
+
+.FOTO {
+  grid-area: FOTO;
+  align-self: center;
+}
+
+.DATOS {
+  grid-area: DATOS;
+  align-self: center;
+}
+
+.FOTO1 {
+  grid-area: FOTO1;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.DESCRIPCION {
+  grid-area: DESCRIPCION;
+  align-self: center;
+}
+
+.DATOS1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "USUARIO1 USUARIO1 USUARIO1" "UBICACION1 UBICACION1 UBICACION1" "FECHA1 FECHA1 FECHA1";
+  grid-area: DATOS1;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.USUARIO1 {
+  grid-area: USUARIO1;
+}
+
+.UBICACION1 {
+  grid-area: UBICACION1;
+}
+
+.FECHA1 {
+  grid-area: FECHA1;
+}
+
+.DESCRIPCION1 {
+  grid-area: DESCRIPCION1;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.FOTO2 {
+  grid-area: FOTO2;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.DESCRIPCION2 {
+  grid-area: DESCRIPCION2;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.DATOS2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "USUARIO2 USUARIO2 USUARIO2" "UBICACION2 UBICACION2 UBICACION2" "FECHA2 FECHA2 FECHA2";
+  grid-area: DATOS2;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.USUARIO2 {
+  grid-area: USUARIO2;
+}
+
+.UBICACION2 {
+  grid-area: UBICACION2;
+}
+
+.FECHA2 {
+  grid-area: FECHA2;
+}
+
+.FOTO3 {
+  grid-area: FOTO3;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.DESCRIPCION3 {
+  grid-area: DESCRIPCION3;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.DATOS3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "USUARIO3 USUARIO3 USUARIO3" "UBICACION3 UBICACION3 UBICACION3" "FECHA-3 FECHA-3 FECHA-3";
+  grid-area: DATOS3;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.USUARIO3 {
+  grid-area: USUARIO3;
+}
+
+.UBICACION3 {
+  grid-area: UBICACION3;
+}
+
+.FECHA-3 {
+  grid-area: FECHA-3;
+}
+
+.gradient-custom-4 {
+  background: blue;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(132, 250, 176), rgb(143, 211, 244));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(132, 250, 176), rgb(143, 211, 244));
+}
+
+li {
+  color: beige;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  justify-content: center;
+}
+
+footer {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*Nuevo*/
+.img-producto-carrito {
+  width: 200px; /* you can use % */
+  height: auto;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.sm-icons {
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 960px) {
+  .sm-icons .nav-item {
+    padding-right: 1em;
+  }
+}
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.fakeimg {
+  height: 200px;
+  background: white;
+}
+
+/*# sourceMappingURL=main.css.map */
+table, td {
+  border: 1px solid black;
+}
+
+.valoresDolares{
+  text-align: right;
+
+}
+
+
+
+
+.text-secondary-d1 {
+  color: #728299!important;
+}
+.page-header {
+  margin: 0 0 1rem;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+  border-bottom: 1px dotted #e2e2e2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.page-title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+.brc-default-l1 {
+  border-color: #dce9f0!important;
+}
+
+.ml-n1, .mx-n1 {
+  margin-left: -.25rem!important;
+}
+.mr-n1, .mx-n1 {
+  margin-right: -.25rem!important;
+}
+.mb-4, .my-4 {
+  margin-bottom: 1.5rem!important;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.text-grey-m2 {
+  color: #888a8d!important;
+}
+
+.text-success-m2 {
+  color: #86bd68!important;
+}
+
+.font-bolder, .text-600 {
+  font-weight: 600!important;
+}
+
+.text-110 {
+  font-size: 110%!important;
+}
+.text-blue {
+  color: #478fcc!important;
+}
+.pb-25, .py-25 {
+  padding-bottom: .75rem!important;
+}
+
+.pt-25, .py-25 {
+  padding-top: .75rem!important;
+}
+.bgc-default-tp1 {
+  background-color: rgba(121,169,197,.92)!important;
+}
+.bgc-default-l4, .bgc-h-default-l4:hover {
+  background-color: #f3f8fa!important;
+}
+.page-header .page-tools {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.btn-light {
+  color: #757984;
+  background-color: #f5f6f9;
+  border-color: #dddfe4;
+}
+.w-2 {
+  width: 1rem;
+}
+
+.text-120 {
+  font-size: 120%!important;
+}
+.text-primary-m1 {
+  color: #4087d4!important;
+}
+
+.text-danger-m1 {
+  color: #dd4949!important;
+}
+.text-blue-m2 {
+  color: #68a3d5!important;
+}
+.text-150 {
+  font-size: 150%!important;
+}
+.text-60 {
+  font-size: 60%!important;
+}
+.text-grey-m1 {
+  color: #7b7d81!important;
+}
+.align-bottom {
+  vertical-align: bottom!important;
+}
+
+.aviso{
+  display: grid;
+  grid-template-columns: 1fr ;
+  border-style: solid;
+  border-width: 1px;
+}
